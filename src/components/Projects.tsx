@@ -1,8 +1,9 @@
 
 import React, { useState } from 'react';
-import { CheckCircle, ChevronRight, Users, Clock, Cpu } from 'lucide-react';
+import { CheckCircle, ChevronRight, Users, Clock, Cpu, Github, Car, Shield } from 'lucide-react';
 import AnimatedCard from './AnimatedCard';
 import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 
 interface Project {
   id: number;
@@ -12,6 +13,7 @@ interface Project {
   techStack: string[];
   keyFeatures: string[];
   icon: React.ReactNode;
+  githubUrl?: string;
 }
 
 const Projects: React.FC = () => {
@@ -59,6 +61,36 @@ const Projects: React.FC = () => {
         "Computer vision processing"
       ],
       icon: <Cpu className="w-6 h-6 text-purple-500" />
+    },
+    {
+      id: 4,
+      title: "Car Racing Game",
+      shortDescription: "Interactive browser-based racing game",
+      fullDescription: "Developed an engaging car racing game with intuitive controls and challenging gameplay. Features include obstacle avoidance, speed boosts, and multiple difficulty levels to provide an immersive gaming experience.",
+      techStack: ["JavaScript", "HTML5 Canvas", "CSS3", "Game Physics", "Audio API"],
+      keyFeatures: [
+        "Responsive controls for seamless gameplay",
+        "Progressive difficulty levels",
+        "Real-time collision detection",
+        "Score tracking and leaderboard"
+      ],
+      icon: <Car className="w-6 h-6 text-red-500" />,
+      githubUrl: "https://github.com/yourusername/car-racing-game"
+    },
+    {
+      id: 5,
+      title: "Phishing Website Detection",
+      shortDescription: "ML-based security tool",
+      fullDescription: "Created a machine learning-powered solution that analyzes websites to detect potential phishing attempts. The system evaluates multiple parameters including URL structure, domain age, and content similarities to determine the likelihood of a website being fraudulent.",
+      techStack: ["Python", "Machine Learning", "Natural Language Processing", "Web Scraping", "Data Analysis"],
+      keyFeatures: [
+        "Real-time website analysis",
+        "Multi-factor detection algorithm",
+        "Browser extension integration",
+        "Regular model updates for emerging threats"
+      ],
+      icon: <Shield className="w-6 h-6 text-indigo-500" />,
+      githubUrl: "https://github.com/yourusername/phishing-detection"
     }
   ];
 
@@ -116,12 +148,19 @@ const Projects: React.FC = () => {
                   .filter(project => project.id === activeProject)
                   .map(project => (
                     <div key={project.id} className="space-y-6">
-                      <div>
+                      <div className="flex items-center justify-between">
                         <h3 className="text-2xl font-semibold">{project.title}</h3>
-                        <p className="mt-3 text-muted-foreground leading-relaxed">
-                          {project.fullDescription}
-                        </p>
+                        {project.githubUrl && (
+                          <Button variant="outline" size="sm" className="gap-2" onClick={() => window.open(project.githubUrl, '_blank')}>
+                            <Github size={16} />
+                            View on GitHub
+                          </Button>
+                        )}
                       </div>
+                      
+                      <p className="mt-3 text-muted-foreground leading-relaxed">
+                        {project.fullDescription}
+                      </p>
                       
                       <div>
                         <h4 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">
