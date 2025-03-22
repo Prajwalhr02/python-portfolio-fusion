@@ -1,13 +1,53 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect } from 'react';
+import Layout from '@/components/Layout';
+import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Education from '@/components/Education';
+import Skills from '@/components/Skills';
+import Projects from '@/components/Projects';
+import Certifications from '@/components/Certifications';
+import Activities from '@/components/Activities';
+import Contact from '@/components/Contact';
 
 const Index = () => {
+  // Scroll animation observer
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const handleIntersect = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    };
+    
+    const observer = new IntersectionObserver(handleIntersect, observerOptions);
+    
+    const elements = document.querySelectorAll('.reveal');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+  
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Layout>
+      <Hero />
+      <About />
+      <Education />
+      <Skills />
+      <Projects />
+      <Certifications />
+      <Activities />
+      <Contact />
+    </Layout>
   );
 };
 
