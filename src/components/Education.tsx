@@ -9,24 +9,24 @@ const Education: React.FC = () => {
       institution: "Bangalore Institute of Technology",
       location: "Bangalore, India",
       degree: "B.E. in Electronics and Instrumentation Engineering",
-      period: "2017 - 2021",
-      gpa: "CGPA: 8.42",
+      period: "2021 - 2025",
+      gpa: "CGPA: 8.67",
       details: "Focused on core electronics, embedded systems, and signal processing."
     },
     {
       institution: "Sri Chaitanya PU College",
       location: "Bangalore, India",
       degree: "Department of Karnataka Department of Pre-University Education",
-      period: "2015 - 2017",
-      gpa: "Percentage: 93%",
+      period: "2019 - 2021",
+      gpa: "Percentage: 91%",
       details: "Specialized in PCM (Physics, Chemistry, Mathematics) with strong academic performance."
     },
     {
       institution: "Sri Siddhinayk Residential School",
       location: "Udupi, India",
       degree: "Secondary Education",
-      period: "2014 - 2015",
-      gpa: "Percentage: 93%",
+      period: "2016- 2019",
+      gpa: "Percentage: 79%",
       details: "Built strong fundamentals in science and mathematics while developing analytical skills."
     }
   ];

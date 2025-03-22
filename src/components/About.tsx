@@ -23,7 +23,7 @@ const About: React.FC = () => {
     {
       icon: <Code size={24} className="text-purple-500" />,
       title: "Software Developer",
-      description: "Capable programmer with experience in C/C++, Linux, and real-time systems."
+      description: "Capable programmer with experience in java, python, Linux, and real-time systems."
     },
   ];
 

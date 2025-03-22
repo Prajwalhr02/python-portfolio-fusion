@@ -28,12 +28,12 @@ const Hero: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
           <div className="flex items-center gap-2 text-muted-foreground">
             <Mail size={16} className="flex-shrink-0" />
-            <span className="truncate">prajwalhr9910@gmail.com</span>
+            <span className="truncate">kprajwal95910@gmail.com</span>
           </div>
           
           <div className="flex items-center gap-2 text-muted-foreground">
             <Phone size={16} className="flex-shrink-0" />
-            <span>+91 8197974380</span>
+            <span>+91 8197914580</span>
           </div>
           
           <div className="flex items-center gap-2 text-muted-foreground">

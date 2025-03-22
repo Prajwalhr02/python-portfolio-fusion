@@ -10,28 +10,42 @@ const Certifications: React.FC = () => {
       issuer: "Cybrary",
       icon: "🐧",
       color: "bg-amber-50 text-amber-600",
-      link: "#"
+      link: "https://drive.google.com/file/d/176_n0MrezHg4Ne9iMgcXzavN6vTuMsSk/view?usp=sharing"
     },
     {
       title: "Artificial Intelligence and Internet of Things",
-      issuer: "Samsung",
+      issuer: "Samsung Semiconductors",
       icon: "🤖",
       color: "bg-blue-50 text-blue-600",
-      link: "#"
+      link: "https://drive.google.com/file/d/1fRPznbzK6VKnbe-zNhsq5twYme6p4eOh/view?usp=sharing"
     },
     {
       title: "Critical Thinking",
-      issuer: "",
+      issuer: "Bangalore Institute of Technology",
       icon: "🧠",
       color: "bg-purple-50 text-purple-600",
-      link: "#"
+      link: "https://drive.google.com/file/d/1e47QPlUDMFitowP85RX6yvdgtXapq8WW/view?usp=sharing"
     },
     {
       title: "Ethical Hacking Essentials",
       issuer: "EC-Council",
       icon: "🔐",
       color: "bg-green-50 text-green-600",
-      link: "#"
+      link: "https://drive.google.com/file/d/1fWF0UDfOlSVYjez2mHo_SjPmHS1Sl8oe/view?usp=sharing"
+    },
+    {
+      title: "IAM job simulation",
+      issuer: "TATA Group",
+      icon: "💡",
+      color: "bg-green-50 text-green-600",
+      link: "https://drive.google.com/file/d/16PJcNvmIFG3LEEvZYBrHXJHhJIfUpuye/view?usp=sharing"
+    },
+    {
+      title: "Java Full Stack",
+      issuer: "Cryptovibe",
+      icon: "♨",
+      color: "bg-green-50 text-green-600",
+      link: "https://drive.google.com/file/d/1lzeNzU1AZW5bLxZB5Dhr8vItKKBLY4wa/view?usp=sharing"
     }
   ];
 

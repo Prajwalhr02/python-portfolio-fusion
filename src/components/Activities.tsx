@@ -24,10 +24,10 @@ const Activities: React.FC = () => {
       description: "Contributed and edited technical content for the department's newsletter and academic papers."
     },
     {
-      title: "Flutter Training",
-      organization: "Bangalore Cup Dance",
+      title: "Riffle Training",
+      organization: "Bangalore city Police",
       icon: <Zap className="w-5 h-5" />,
-      description: "Participated in Flutter app development training, enhancing mobile development skills."
+      description: "Participated in Riffle training and understanding about diffrent weapons and ammos."
     }
   ];
 

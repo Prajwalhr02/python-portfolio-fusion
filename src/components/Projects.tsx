@@ -25,9 +25,9 @@ const Projects: React.FC = () => {
       title: "Smart Attendance System",
       shortDescription: "Automated attendance tracking system",
       fullDescription: "Created an automated attendance tracking solution that streamlined data capturing processes, eliminating manual entries and generating reports previously plagued by manual attendance data reconciliation.",
-      techStack: ["OpenCV", "Python", "Facial Recognition", "Database Management"],
+      techStack: ["RFID", "Python", "SMART CARD", "Database Management"],
       keyFeatures: [
-        "Automated face detection and recognition",
+        "Automated RDID based",
         "Real-time attendance tracking",
         "Reporting and analytics",
         "Seamless integration with existing systems"

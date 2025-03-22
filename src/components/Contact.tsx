@@ -27,8 +27,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <a href="mailto:prajwalhr9910@gmail.com" className="font-medium hover:text-primary transition-colors">
-                      prajwalhr9910@gmail.com
+                    <a href="mailto:kprajwal95910@gmail.com" className="font-medium hover:text-primary transition-colors">
+                      kprajwal95910@gmail.com
                     </a>
                   </div>
                 </div>
@@ -39,8 +39,8 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Phone</p>
-                    <a href="tel:+918197974380" className="font-medium hover:text-primary transition-colors">
-                      +91 8197974380
+                    <a href="tel:+918197914580" className="font-medium hover:text-primary transition-colors">
+                      +91 8197914580
                     </a>
                   </div>
                 </div>
